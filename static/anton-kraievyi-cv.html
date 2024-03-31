@@ -62,10 +62,12 @@ h2, .h2 {
   font-weight: bold
 }
 .study {
+  color: #333;
+  font-weight: bold;
   font-style: italic;
 }
 .stale {
-  color: #8AC;
+  color: #777;
   font-style: italic
 }
 table.hist td, table.hist th {
@@ -80,239 +82,592 @@ table.hist tr td:not(:first-of-type) {
   border-top: 0.5px dashed #CCE6FF;
 }
 tr:hover td {
-  background: #f9fcff
+  background: #f0f7ff
 }
 table.hist tr.subhead td {
-  background: #CCE6FF;
+  background: #E7F0FF;
   border-top: 0.5px solid #69C;
   vertical-align: middle;
   font-weight: bold;
 }
 table.hist th {
-  background: #9CF;
+  background: #CCE7FF;
   vertical-align: middle;
   padding: 10px;
+  font-weight: normal;
 }
-ul.hist > li  {
-  list-style-type: none;
-}
-ul.hist > li > span {
-  font-weight: bold;
-}
-ul.hist > li > ul > li {
-  list-style-type: disc;
-}
-ul.hist > li > ul > li > ul > li {
-  list-style-type: none;
-  font-size: smaller;
+.hist tr td:first-of-type, .hist tr th:first-of-type {
+  text-align: center;
 }
 </style>
 </head>
 
 <body class="body">
 <h1 class="lineOne">Anton Kraievyi: Curriculum Vitae</h1>
-<h1 class="aim"><span class="pro">Aim</span>: Software Developer or Site Reliability Engineer</h1>
+<h1 class="aim"><span class="pro">Aim</span>: Site Reliability Engineer</h1>
 <h2 class="h2">Personal information</h2>
-<ul>
-  <li><span>Birth date: 18 Sep 1982</span></li>
-  <li><span>Email: <a href="mailto:akraievoy@gmail.com">akraievoy@gmail.com</a></span></li>
-  <li><span>Family status: married, two children</span></li>
-  <li><span>Possibility to work in the UK: Tier 2 Visa Sponsorship required</span></li>
+<ul start="1">
+  <li><span>Email: <a href="mailto:anton.kr.jobs@pm.me">anton.kr.jobs@pm.me</a></span></li>
 </ul>
-<h2 class="h2">Education / Academia / Competitive Programming</h2>
-<ul>
-  <li>2005 <span>Masters in &quot;Decision-Support Systems in Business&quot;, Institute of Applied System Analysis of NTUU &quot;Kyiv Polytechnic Institute&quot;</span> </li>
-  <li>Areas of interest: complex networks, DHT protocols, resilience of distributed systems, expander networks and spectral graph theory</li>
-  <li>coursera: <a href="https://www.coursera.org/course/reactive">Reactive Programming</a> completed with score of 82.5% in Jan 2014</li>
-  <li>score at <a href="https://www.hackerrank.com/ak_j17_258749">HackerRank</a> above 2000, <a href="https://www.topcoder.com/members/akraievoy/">TopCoder</a> above 1300</li>
-</ul>
-<h2 class="h2">Skills and Tools</h2>
-<ul>
-  <li>Object-Oriented Programming: <span>GoLang</span>, <span>Java</span>: <span class="pro">Guice</span>, <span class="stale">Spring</span>, <span class="stale">Hibernate</span></li>
-  <li>Functional Programming: <span class="pro">Scala</span>: <span>ScalikeJDBC</span>, <span>Unfiltered</span>, <span class="stale">Play!</span>, <span class="stale">Akka</span>; <span class=stale>JavaScript</span>: <span class="stale">lodash</span></li>
-  <li>Scripting: <span class="pro">bash</span>, <span class="pro">GNU coreutils</span>, <span>Python</span></li>
-  <br/>
-  <li>BigData: <span class="pro">Apache Spark: Batch & Kafka + Structured Streaming</span>; <span>Impala</span>, AWS: <span class=study>Elastic MapReduce</span>, <span class=study>Athena</span>, <span class=stale>RedShift</span>; <span class=stale>Google BigQuery</span></li>
-  <li>Cloud Computing: <span class="pro">Amazon Web Services:</span> <span class="pro">EC2+ELB+Route53</span>, <span class="pro">Spot Fleet API</span>, CloudFormation</li>
-  <li>DevOps/SRE: <span class="pro">grafana</span>, <span>prometheus</span>, <span>influx</span>, <span>graylog</span>, nginx, <span class="stale">zabbix</span></li>
-  <br/>
-  <li>Software Design: <span class="pro">BPMN2</span>, <span>UML</span>, <span class="stale">Gang-of-Four Patterns</span>, <span class="stale">Enterprise Integration Patterns</span></li>
-  <li>Continuous Delivery: <span class="pro">TeamCity</span>, <span class="pro">GitHub API</span>, gradle, <span class="stale">sbt</span>, <span class="stale">multi-module maven/ant builds</span></li>
-  <li>Microservices: <span class="pro">Docker</span>, <span class="pro">Kubernetes</span>, <span class="pro">Mesos</span>, AWS Lambda</li>
-  <br/>
-  <li>Data stores: <span class="pro">Postgresql 9.6</span>, <span>Flyway</span>, AWS: RDS, DynamoDb; <span class="stale">CouchDB</span>, <span class="stale">MongoDB</span></li>
-  <li>Web applications: <span>D3.js</span>, <span class="stale">Angular.js</span>, <span class="stale">jQuery</span>, <span class="stale">Kendo UI</span>, <span class="stale">Servlets</span>, <span class="stale">JSP</span></li>
-  <li>Operating Systems: <span class="pro">Ubuntu Linux + XFCE</span>, <span class="stale">CentOS Linux</span></li>
+<h2 class="h2">Education / Academia</h2>
+
+Areas of interest: portfolio construction, Kelly sizing, complex networks, decentralised protocols and availability.
+
+<ul start="1">
+  <li><a target="_blank" href="https://www.credly.com/badges/8975b077-aeea-44db-a18c-0b5faf2c6b8d">WorldQuant University - Data Science</a>
+    (plus <a target="_blank" href="https://www.credly.com/badges/016d0bbd-498c-4ba3-bdf0-ba43e60c694a">ML part</a>), 2021
+  </li>
+  <li><a target="_blank" href="https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/971465~1336151/pdf">Principles of Reactive Programming</a>, 2014</li>
+  <li>Ph.D. (incomplete): <a target="_blank" href="https://github.com/akraievoy/holonet">distributed key-value store overlay networks, their spectrum and resilience to partitioning</a></li>
+  <li>2005 M.Sc. &laquo;<a target="_blank" href="http://mmsa.kpi.ua/en/disciplines/smdm">Systems and Methods of Decision-Making</a>&raquo;, Institute of Applied System Analysis of NTUU &laquo;Kyiv Polytechnic Institute&raquo;, Ukraine </li>
 </ul>
 <h2 class="h2">Languages</h2>
-<ul>
+<ul start="1">
   <li><span>English - First Certificate in English, Level 2 (C1) as of February 2015, Cambridge English Language Assessment;</span> </li>
   <li><span>Russian, Ukrainian - native speaker</span></li>
-  <li><span>Polish - Level B1 as of 2015</span></li>
 </ul>
+
+<h2 class="h2">Soft Skills</h2>
+<ul>
+  <li>Work for the product: track cost implications and business impact for changes and incidents</li>
+  <li>Play for the team: balance autonomy and efficiency, manage interrupts and long-term backlogs</li>
+  <li>Manage delivery: focus on blockers on critical path, engage owners, set example for execution and code quality</li>
+  <li>Strive for simplicity: best architecture forces fewest lock-ins, good design is invisible</li>
+  <li>Prefer waiting (for open source to reach parity with requirements) to inventing (from scratch, in-house)</li>
+</ul>
+
+<h2 class="h2">Hard Skills</h2>
+
+<ul start="1">
+  <li>Styles:
+    <span class="pro">complex tasks within last year</span>,
+    <span>moderate complexity within last year</span>,
+    <span class="stale">not used for at least a year</span>
+  </li>
+
+  <br/>
+
+  <li>Infrastructure:
+    <span class="pro">Terraform</span>,
+    <span class="pro">Docker</span>,
+    <span class="pro">Kubernetes</span>,
+    <span class="pro">Kustomize</span>,
+    <span class="">Helm</span>
+  </li>
+  <li>Cloud Service Providers:
+    <span class="pro">Amazon Web Services</span>,
+    <span class="">Google Compute Platform</span>,
+    <span class="">Microsoft Azure</span>,
+    <span class="">OpenShift</span>
+    <!--
+    <span class="stale">Mesos</span>,
+    <span class="stale">Singularity</span>
+    -->
+  </li>
+  <li>Continuous Delivery:
+    <span class="">GitHub Actions</span>,
+    <span class="">Azure DevOps Pipelines</span>,
+    <span class="stale">CircleCI</span>,
+    <span class="stale">TeamCity</span>,
+    <span class="stale">Jenkins</span>
+    <!--
+    <span class="stale">GitHub API</span>,
+    -->
+  </li>
+  <li>Observability: 
+    <span class="">Prometheus</span>,
+    <span class="">Grafana</span>,
+    <span class="">Kibana</span>,
+    <span class="">strace</span>,
+    <span class="stale">Sentry</span>,
+    <span class="stale">NewRelic</span>,
+    <span class="stale">Zabbix</span>,
+    <span class="stale">Graylog</span>
+  </li>
+
+  <br/>
+
+  <li>Algorithm Design:  
+    <span class="pro">pandas</span>,
+    <span class="pro">numpy/bottleneck/numba</span>,
+    <span class="stale"><a target="_blank" href="https://www.hackerrank.com/akraievyi">HackerRank</a></span>,
+    <span class="stale"><a target="_blank" href="https://github.com/akraievoy/codejam">CodeJam</a></span>, 
+    <span class="stale"><a target="_blank" href="https://www.topcoder.com/members/akraievoy/">TopCoder</a></span>
+  </li>
+  <li>System Architecture: 
+    <span>BPMN 2</span>, 
+    <span>UML</span>, 
+    <span class="stale">GoF/J2EE patterns</span>
+  </li>
+  <li>Data stores: 
+    <span class="pro">Postgresql</span>,
+    <span class="stale">BigQuery</span>
+    <span class="stale">Redis</span>,
+    <span class="stale">Hadoop</span>,
+    <span class="stale">RedShift</span>
+    <!--
+    <span class="stale">ElasticSearch</span>,
+    <span class="stale">CouchDB</span>,
+    <span class="stale">MongoDB</span>,
+    <span class="stale">InfluxDB</span>
+    -->
+  </li>
+  <li>Event Streaming:
+    <span class="">Apache Kafka</span>,
+    <span class="stale">ReactiveX</span>,
+    <span class="stale">Spark Streaming</span>,
+    <span class="stale">Flask</span>
+    <!--
+    <span class="stale">Apache Camel</span>
+    -->
+  </li>
+  <!--
+  <li>Interop:
+    <span class="pro">ReST/JSON</span>,
+    <span class="">GRPC/Protobufs</span>,
+    <span class="stale">SOAP/XML</span>,
+    <span class="stale">GraphQL</span>,
+    <span class="stale">avro</span>
+  </li>
+  -->
+
+  <br/>
+
+  <li>Automation Scripting:
+    <span class="pro">bash + coreutils</span>,
+    <span class="pro">jq</span>,
+    <span class="pro">JMESPath/gjson</span>,
+    <span class="">make</span>
+    <!--
+    <span class="stale">python invoke</span>
+    -->
+  </li>
+  <li>Test-driven Development: 
+    <span class="pro">unit testing</span>,
+    <span class="pro">mock-objects</span>, 
+    <span class="">behaviour-driven tests</span>
+  </li>
+  <li>Object-oriented Programming:
+    <span class="">python</span>,
+    <span class="">go</span>,
+    <span class="stale">Java</span>, 
+    <span class="stale">rust</span>
+  </li>
+  <li>Functional Programming:
+    <span class="stale">Scala</span>,
+    <span class="stale">lodash/d3 (javascript)</span>,
+    <span class="stale">Haskell</span>
+  </li>
+
+  <br/>
+
+  <li>Build Automation:
+    <span class="pro">Please</span> (similar to Bazel, please see <a target="_blank" href=https://please.build/">here</a>),
+    <span class="">poetry</span>,
+    <span class="stale">sbt</span>,
+    <span class="stale">gradle</span>,
+    <span class="stale">maven</span>,
+    <span class="stale">ant</span>
+    <!--
+    <span class="">bazel<span>,
+    -->
+  <li>Source control:
+    <span class="pro">git</span>,
+    <span class="pro">git flow</span>,
+    <span class="stale">subversion</span>
+  </li>
+  <li>Security:
+    <span class="stale">checkov</span>,
+    <span class="stale">terraform-compliance</span>,
+    <span class="stale">Contrast (dynamic vuln scanning)</span>,
+    <span class="stale">code obfuscation</span>
+  </li>
+  <!--
+  <li>Web design: 
+    <span class="">HTML 5</span>, 
+    <span class="">CSS 3</span>, 
+    <span>D3.js</span>, 
+    <span class="stale">Angular.js</span>, 
+    <span class="stale">jQuery</span>, 
+    <span class="stale">Kendo UI</span>
+  </li>
+  -->
+</ul>
+
+<h2 class="h2">Preferred Tools</h2>
+<ul start="1">
+  <li>Operating System: Debian/Ubuntu, Xfce</li>
+  <li>Development tools: IntelliJ Idea/DataGrip, dig, nc, wireshark, Chrome Dev Tools</li>
+  <li>Terminal: bash, tmux, silversearch, fzf, k9s, vim/nano</li>
+</ul>
+
+<!--
+<h2 class="h2">Python frameworks</h2>
+<ul start="1">
+  <li>Data Analysis: <span class="study">pandas</span>, <span class="study">matplotlib</span>, <span class="study">seaborn</span></li>
+  <li>Web: <span class="">Flask</span></li>
+</ul>
+<h2 class="h2"><span class="pro">Java frameworks</span></h2>
+<ul start="1">
+  <li>Dependency Injection: <span class="pro">Guice</span>, <span class="stale">Spring</span>, <span class="stale">picoContainer</span></li>
+  <li>Persistence: <span>JDBC</span>, <span class="stale">commons-dbutils</span>, <span class="stale">JPA/Hibernate</span></li>
+  <li>Web: <span>Jetty</span>, <span class="stale">Spring-MVC</span>, <span class="stale">Servlets</span>, <span class="stale">JSP</span></li>
+  <li>Reporting: <span class="stale">Apache POI</span>, <span class="stale">Jasper Reports</span></li>
+  <li>GUI/Plotting: <span class="stale">AWT/Swing</span>, <span class="stale">Java2D</span>, <span class="stale">Prefuse</span>, <span class="stale">JFree Chart</span></li>
+</ul>
+<h2 class="h2">Scala frameworks</h2>
+<ul start="1">
+  <li>Big Data: <span class="">Spark</span>, <span class="">Spark Structured Streaming</span></li>
+  <li>Persistence: <span class="">ScalikeJDBC</span>, <span class="stale">Anorm</span>, <span class="stale">Salat/Casbah</span></li>
+  <li>Web: <span class="">Unfiltered</span>, <span class="stale">akka-http</span>, <span class="stale">Play!</span></li>
+  <li>Actors: <span class="stale">Akka 2.3</span></li>
+</ul>
+-->
+
+<br/>
 <h2 class="h2">Employment History</h2>
-<ul class=hist>
-  <li><span> Oct 2015 &mdash; current : Architecture Technical Lead at Captify Media</span>
-    <ul>
-      <li>Implemented Spot Fleet autoscaler and several cost/savings/risk assessment tools
-        <ul>
-          <li>GoLang, Prometheus, Grafana, AWS EC2, Mesos</li>
-        </ul>
-      </li>
-      <li>Led a project to reduce end-to-end data pipeline processing lag
-        <ul>
-          <li>Scala, Spark Streaming, Kafka, Mesos, Singularity</li>
-        </ul>
-      </li>
-      <li>Factored out multiple microservices, implemented modular CI/CD workflows
-        <ul>
-          <li>Python/Bash, Docker, Kubernetes, Teamcity, Amazon ECR, ELB, Route53</li>
-        </ul>
-      </li>
-      <li>Established SRE practices in several teams
-        <ul>
-          <li>Graylog, InfluxDB, Grafana, Prometheus</li>
-        </ul>
-      </li>
-      <li>Evaluated and supported workload migration across multiple big data stacks
-        <ul>
-          <li>Impala, Amazon RedShift, Google BigQuery, Databricks</li>
-        </ul>
-      </li>
-      <li>Documenting system architecture as series of BPMN diagrams
-    </ul>
-  </li>
-  <li><span>Nov 2013 &mdash; Oct 2015 : Technical Team Lead at Innovecs (for Captify Media)</span>
-    <ul>
-      <li>Implemented Dependency Injection for Spark/Play!-based applications 
-        <ul>
-          <li>Scala, Guice</li>
-        </ul>
-      </li>
-      <li>Led full-stack solution architecture and developed features of an ERP web-application   
-        <ul>
-          <li>Scala, Play 2.2, Akka 2.3, Angular.js, D3.js</li>
-        </ul>
-      </li>
-      <li>Led solution architecture for search retargeting, aggregation, attribution data pipelines
-        <ul>
-          <li>Scala, Spark 1.6, PostgreSQL 9.3, Amazon&nbsp;RedShift</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>May 2012 &mdash; Oct 2013 : Scala Backend Developer -> Team Lead at StrikeAd</span>
-    <ul>
-      <li>Led a team of 4, developing aggregation data pipeline and reporting web application 
-        <ul>
-          <li>Scala, Play!, Google BigQuery, Java, Hadoop/Pig</li>
-        </ul>
-      </li>
-      <li>Led a team of 8, developing an AdOps trading desk web-application  
-        <ul>
-          <li>Scala, Play, MongoDB, Javascript, Kendo UI</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>May 2011 &mdash; May 2012 : Senior Java Developer at Globallogic (for Telcordia)</span>
-    <ul>
-      <li>Developed features for a corporate account management web-application
-        <ul>
-          <li>Java, Jetty, SmartGWT, Axis</li>
-        </ul>
-      </li>
-      <li>Covered build automation and team branch isolation for several modules of Broadband Charging System
-        <ul>
-          <li>Java, Spring, JBoss, Oracle TimesTen, Fitnesse, Ant</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>Oct 2010 &mdash; Feb 2011 : Part-time tutor at EPAM</span>
-    <ul>
-      <li>Developed and conducted crash course for junior Java developers</li>
-    </ul>
-  </li>
-  <li><span>Sept 2009 &mdash; May 2011 : Assistant at Department of Math Methods of System Analysis</span>
-    <ul>
-      <li>Conducted Computer Networks / Software Engineering courses</li>
-      <li>Designed and implemented courseware webapp with approval/scoring functions
-        <ul>
-          <li>Java, Spring-MVC/Velocity, CoachDB</li>
-        </ul>
-      </li>
-      <li>Designed and implemented a platform for discrete-event simulation of DHT protocol Chord &mdash; to
-       prove better resilience after spectral gap increase
-        <ul>
-          <li>Java, Spring, JDBC, H2, Swing</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>Jan 2007 &mdash; Apr 2011 : Technical Team Lead at ODesk (for codebistro.com)</span>
-    <ul>
-      <li>took part in development of X-Ray/MRT peer-review web-application
-        <ul>
-          <li>Javascript, JQuery, Java, Spring-MVC, Velocity, JPA, H2</li>
-        </ul>
-      </li>
-      <li>took part in development of Java applet/servlet solution for striped streaming media transfer
-        <ul>
-          <li>Javascript, JQuery, Java, Spring-MVC, Velocity, Servlets, picoContainer, xFire, HttpClient</li>
-        </ul>
-      </li>
-      <li>took part in development of pre-publishing review/approve web-application
-        <ul>
-          <li>Java, Swing, Google Protobuf, Spring-MVC, Velocity</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>Jun 2006 &mdash; Oct 2006 : Java Developer at Incom (for Kyivstar)</span>
-    <ul>
-      <li>Kyivstar SelfCare Portal: bugfixes, continuous integration/deployment
-        <ul>
-          <li>Java, Struts, Ant, XSLT</li>
-        </ul>
-      </li>
-      <li>Resource Manager: simple Swing database front-end, database integrated with
-      Continuous Integration API to trigger builds by database changes
-        <ul>
-          <li>Java, Swing, JDBC, Oracle 9i, CruiseControl</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>Jan 2005 &mdash; Jun 2006 : Java Developer at Vested Development Inc</span>
-    <ul>
-      <li>Proposing solution architecture and implementation of several ERP modules in distributed team</li>
-      <li>Significant contribution to build management process and overall code quality</li>
-      <li>Successfully led a team of 3 developers during prototype phase of one of modules</li>
-        <ul>
-          <li>Java EE 1.3 (Servlets, JSP, EJB), JetSpeed, Turbine, Apache POI, JasperReports, Oracle 9i, CruiseControl</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>May 2004 &mdash; Jan 2005 : Java Developer at Ciklum, for ExcelData</span>
-    <ul>
-      <li>Design, development and bug fixing of several replacement modules for in-house ERP system
-        <ul>
-          <li>Java, Swing, custom DOM-based XML API</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><span>Jul 2003 &mdash; Jan 2004 : Junior Java Developer at Dev Zero G Ltd.</span>
-    <ul>
-      <li>Feature Development for several JSP-based web-applications: a CMS, preprint management, pre-flight document proofing
-        <ul>
-          <li>Java, Java Servlets/Applets, Struts, Java ImageIO, PostgreSQL</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+<table border=0 cellspacing=0 class="hist">
+  <tr>
+    <th width="8%"><span style="font-weight: bold;">Time<span></td>
+    <th width="31%"><span style="font-weight: bold;">Employer</span><hr/>Technologies</td>
+    <th width="61%"><span style="font-weight: bold;">Position</span><hr/>Project Domain</td>
+  </tr>
+  <tr class="subhead">
+    <td>current<br/>
+      -<br/>
+      Sept 2021</td>
+    <td>Thought Machine</td>
+    <td>Site Reliability Engineer</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Microsoft Azure, Terraform, Please</td>
+    <td>Led a project to make existing product provisioning automation support a new cloud service provider.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AWS CodeBuild, AWS CodePipelines, Terraform, Please</td>
+    <td>Led a project to automate provisioning for a dedicated PCI DSS-compliant environment.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AWS EKS, kubernetes autoscaler, AWS VPC CNI plugin, external-dns, cert-manager</td>
+    <td>Took part in several smaller projects to improve cost efficiency and stability of product workloads for both EKS and GKE.
+      Typical day-one operations for spot interruptions and mass node restarts for k8s version upgrades.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ginkgo, gomock, prometheus, trivy</td>
+    <td>Improved coverage for vulnerability scanning, service-level metrics, and alerting.
+      Led tech response for internal incidents, with reasonable success rate; took part in production on-call.</td>
+  </tr>
+  <tr class="subhead">
+    <td>Aug 2021<br/>
+      -<br/>
+      Aug 2019</td>
+    <td>Babylon Health - Developer Experience</td>
+    <td>Senior Software Engineer</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>python, shell, rust, kubernetes</br>Jenkins, Sentry, NewRelic, Slack API</td>
+    <td>Extend declarative <a href="https://github.com/babylonhealth/shipcat/commits?author=bh-anton-k" target="_blank">infra-as-code stack</a> with components to model/automate configuration for Sentry/NewRelic microservice monitoring integrations</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Contrast Security</br>gradle, docker-compose, java/spring-webmvc, python/flask, hugo</td>
+    <td>Prototype/test/document <a href="https://www.contrastsecurity.com/" target="_blank">Contrast Security</a> vulnerability scanning in multiple existing projects</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>postgres, go, make, terraform<br/>grafana, jenkins, AWS (S3/IAM)</br></td>
+    <td>Improve microservice deployment monitoring and auditability</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Azure DevOps pipelines, Spinnaker</br>python/flask, github/jira APIs, docker, shell</td>
+    <td>Battle-test/document/maintain next-generation Continuous Delivery/Compliance platform</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Azure DevOps pipelines</br>terraform, shell, AWS (EC2/CloudFormation)</td>
+    <td>Extend <a href="https://github.com/babylonhealth/terraform-provider-azuredevops/commits?author=bh-anton-k" target="_blank">infrastructure-as-code provisioning</a> for Continuous Delivery/Compliance platform</td>
+  </tr>
+  <tr class="subhead">
+    <td>Aug 2019<br/>
+      -<br/>
+      Oct 2015</td>
+    <td>Captify Media</td>
+    <td>Software Architect + Technical Lead + Site Reliability Coach</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Kafka+Spark Streaming<br/>
+        Cloudera+Mesos+Singularity</td>
+    <td>Switching Spark pipelines from Batch to Structured Streaming</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Docker+Kubernetes, Python+Teamcity+Amazon&nbsp;Services<br/>
+        Graylog+InfluxDB+Grafana</td>
+    <td>Production health-checks and monitoring<br/>
+        Extracting microservices, implementing CI/CD workflows<br/>
+        Documenting system architecture as series of BPMN diagrams</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Unfiltered, Spark</td>
+    <td>20+ micro-modules: blocks of search retargeting pipeline + shared utility libraries</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Impala, Postgres, Amazon RedShift</td>
+    <td>Migration of analytic workflows from RedShift to Impala</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Play!, Spark, Guice</td>
+    <td>Enacting Dependency Injection in Play! and Spark modules</td>
+  </tr>
+  <tr class="subhead">
+    <td>Oct 2015<br/>
+      -<br/>
+      Nov 2013</td>
+    <td>Innovecs, for Captify Media</td>
+    <td>Technical Lead + Team Lead</td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>Scala 2.10, Play 2.2, Akka 2.3, Angular.js, D3.js</td>
+    <td>C3 - Ad Ops planning/reporting/content-management frontend
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Spark 1.6, PostgreSQL 9.3, Amazon&nbsp;RedShift</td>
+    <td>ETL/DB backends for ad placement planning, reports and billing</td>
+  </tr>
+  <tr class="subhead">
+    <td>Oct 2013<br/>
+      -<br/>
+      May 2012</td>
+    <td>StrikeAd</td>
+    <td>Scala Backend Developer -> Team Lead</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Google BigQuery, Hadoop/Pig</td>
+    <td>Fusion 2 Slicer - Aggregation/Reporting Web Application</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Scala, Play 2.0, MongoDB, Javascript, Kendo UI</td>
+    <td>Fusion 2 - AdTech Trading Desk Web Application</td>
+  </tr>
+  <tr class="subhead">
+    <td>May 2012<br/>
+      -<br/>
+      May 2011</td>
+    <td>Globallogic</td>
+    <td>Senior Java Developer</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Jetty, SmartGWT, Axis</td>
+    <td>Enterprise GUI: web application to manage corporate accounts for Telcordia Broadband Charging System</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Spring, JBoss, Oracle TimesTen, Fitnesse, Ant
+      </td>
+    <td>Telcordia Broadband Charging System: feature development, integration testing, team branch isolation</td>
+  </tr>
+  <tr class="subhead">
+    <td>Feb 2011<br/>
+      -<br/>
+      Oct 2010</td>
+    <td>EPAM</td>
+    <td>Tutor, part-time</td>
+  <tr>
+    <td></td>
+    <td>VNC + Freemind + ELW (see below)</td>
+    <td>Developing and conducting crash course for junior Java developers</td>
+  </tr>
+  <tr class="subhead">
+    <td>May 2011<br/>
+      -<br/>
+      Sept 2009</td>
+    <td>Department of Math Methods of System Analysis; NTUU "Kyiv Polytechnic Institute"</td>
+    <td>Assistant: Computer Networks / Software Engineering courses</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Spring-MVC/Velocity, CoachDB</td>
+    <td><a target="_blank" href="http://github.com/akraievoy/elw">ELW</a>: design, development, maintenance of courseware webapp with approval/scoring functions</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Swing, Spring, JDBC, H2</td>
+    <td><a target="_blank" href="http://github.com/akraievoy/holonet">holonet</a>: design and development of a platform for statistical and discrete-event simulation of
+      complex networks and DHT protocols<br/>
+      genetic/spectral optimizations of overlay networks up to 4k nodes</td>
+  </tr>
+  <tr class="subhead">
+    <td>Apr 2011<br/>
+      -<br/>
+      Jan 2007</td>
+    <td>codebistro.com</td>
+    <td>Project technical leader (remote)</td>
+  <tr>
+    <td></td>
+    <td>JQuery, Spring-MVC, Velocity, JPA, H2</td>
+    <td>XRFiles/XRSend: development and maintenance of X-Ray/MRT peer-review web-application</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>JQuery, Spring-MVC, Velocity</td>
+    <td>Glider/BQuick-NG: development and mainenance of successive versions of BQuick: striped
+      streaming, interleaved asynchronous JSON/binary network protocols</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Swing, Google Protobuf, Spring-MVC, Velocity</td>
+    <td>BProof: maintenance of pre-publishing review/approve web-application</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Servlets, picoContainer, xFire, HttpClient</td>
+    <td>BQuick transfer manager: design, development, maintenance of distributed media streaming
+      application</td>
+  </tr>
+  <tr class="subhead">
+    <td>Oct 2006<br/>
+      -<br/>
+      Jun 2006</td>
+    <td>Incom</td>
+    <td>Java Developer</td>
+  <tr>
+    <td></td>
+    <td>J2SE 1.5, Struts, Ant, XSLT</td>
+    <td>Kyivstar SelfCare Portal: bugfixes, continuous integration/deployment</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Swing, JDBC, Oracle 9i, CruiseControl</td>
+    <td>Resource Manager: simple Swing database front-end, database integrated with
+      CruiseControl SourceControl interface to trigger builds by changes</td>
+  </tr>
+  <tr class="subhead">
+    <td>Jun 2006<br/>
+      -<br/>
+      Jan 2005</td>
+    <td>Vested Development, Inc.</td>
+    <td>Java Developer</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>J2EE 1.3 (Servlets, JSP, EJB, JetSpeed, Turbine), Oracle 9i, Linux, CruiseControl</td>
+    <td>Lighthouse Testing module: successful presale and implementation design phases</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Same</td>
+    <td>Lighthouse PM portal extensions: Estimations of project schedule, costs and risks, creation of
+      design proposals, successfully completed implementation and QA phases</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Same</td>
+    <td>Lighthouse project management portal: Implementation of several modules in distributed
+      international project. Reasonable contribution to build management process and overall code quality and
+      stability.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Same + Jasper Reports</td>
+    <td>Lighthouse Custom Reporting module: Led a team of 3 developers during prototype phase, was
+      responsible for estimations, requirements scope and technical solutions. Successfully completed the phase</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Same + Jakarta POI</td>
+    <td>Lighthouse Requirement Management module: rewrite of a module previously developed by
+      India-based ISV subcontractor, heavy use of AJAX and POI, successful presale, development, integration and
+      QA phases</td>
+  </tr>
+  <tr class="subhead">
+    <td>Jan 2005<br/>
+      -<br/>
+      May 2004</td>
+    <td>Ciklum Ltd, for ExcelData</td>
+    <td>Java Developer</td>
+  <tr>
+    <td></td>
+    <td>J2SE 1.4, Swing, custom DOM-based XML API</td>
+    <td>InfoSuite: Design, development and bug fixing of several replacement modules for in-house ERP system.</td>
+  </tr>
+  <tr class="subhead">
+    <td>May 2004<br/>
+      -<br/>
+      Feb 2004</td>
+    <td>rentacoder</td>
+    <td>Java/Javascript Developer</td>
+  <tr>
+    <td></td>
+    <td>J2SE 1.4, JAXP(DOM/SAX), AXIS, Swing, Java 2D, Java Web Start</td>
+    <td>TOM: Wrapping socket stream based communication protocol into web service in an existing
+      software project.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Core Java 2</td>
+    <td>Chord: Redesign and extension of simulation system used to validate/profile peering network
+      protocols</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Core Java 2</td>
+    <td>SixSigma: Math core of portal system that was to be used for statistical processing and
+      analysis of business data</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Swing + Applets</td>
+    <td>CakeFight: Design and development of Swing-based game Applet with dynamic classloaders</td>
+  </tr>
+  <tr class="subhead">
+    <td>Feb 2004<br/>
+      -<br/>
+      Jan 2004</td>
+    <td>Academic research</td>
+    <td>Java Developer</td>
+  <tr>
+    <td></td>
+    <td>J2SE 1.3.1, Swing, JUnit, JDBC/ODBC bridge, Paradox DB</td>
+    <td>Network traffic engineering software package with temporal network structure synthesis
+      capability. Full development cycle w/o long-term maintenance, but with extensive profiling for performance</td>
+  </tr>
+  <tr class="subhead">
+    <td>Jan 2004<br/>
+      -<br/>
+      Jul 2003</td>
+    <td>Dev Zero G Ltd.</td>
+    <td>Java Developer</td>
+  <tr>
+    <td></td>
+    <td>J2SE 1.3.1, Java Servlets/Applets, Struts, Java ImageIO, PostgreSQL</td>
+    <td>SiqoCMS: JSP-Based Content Management System. Development/unit-testing/maintenance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Same</td>
+    <td>FlatPlan: JSP-Based preprint management solution. Development/unit-testing/maintenance</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Same</td>
+    <td>PrintSure: Pre-flight checking solution. Development/unit-testing</td>
+  </tr>
+</table>
 </body>
 </html>
