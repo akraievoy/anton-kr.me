@@ -1,12 +1,12 @@
-<html>
+<html lang="en">
 <head>
 <title>Anton Kraievyi: Curriculum Vitae</title>
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
-<style type="text/css">
+<style>
 body, .body {
   background-color: #fff;
   color: #333;
-  font-size: 10pt;
+  font-size: 11pt;
   font-family: 'Roboto', Helvetica, Arial, Tahoma sans-serif;
   line-height: 1.5;
   direction: ltr;
@@ -22,13 +22,16 @@ table {
 p {
   margin: 0
 }
+p.single-line-summary {
+  margin: 0 0 0 2em;
+}
 ul {
   margin: 0;
   padding: 0;
   list-style-type: circle;
 }
 li {
-  margin-left: 30.0pt;
+  margin-left: 2em;
 }
 h1 {
   padding-top: 0;
@@ -66,7 +69,7 @@ h2, .h2 {
   font-weight: bold;
   font-style: italic;
 }
-.stale {
+.dated {
   color: #777;
   font-style: italic
 }
@@ -76,7 +79,7 @@ table.hist td, table.hist th {
   border: none;
   vertical-align: top;
   text-align: left;
-  font-size: 9pt;
+  font-size: 10pt;
 }
 table.hist tr td:not(:first-of-type) {
   border-top: 0.5px dashed #CCE6FF;
@@ -105,26 +108,17 @@ table.hist th {
 <body class="body">
 <h1 class="lineOne">Anton Kraievyi: Curriculum Vitae</h1>
 <h1 class="aim"><span class="pro">Aim</span>: Site Reliability Engineer</h1>
-<h2 class="h2">Personal information</h2>
-<ul start="1">
-  <li><span>Email: <a href="mailto:anton.kr.jobs@pm.me">anton.kr.jobs@pm.me</a></span></li>
-</ul>
+<h2 class="h2">Contacts</h2>
+<p class="single-line-summary"><span>Email: <a href="mailto:akraievyis@gmail.com">akraievyi@gmail.com</a></span> <span>GitHub: <a href="https://github.com/akraievoy">akraievoy</a></span></p>
+
 <h2 class="h2">Education / Academia</h2>
 
-Areas of interest: portfolio construction, Kelly sizing, complex networks, decentralised protocols and availability.
-
-<ul start="1">
+<ul >
   <li><a target="_blank" href="https://www.credly.com/badges/8975b077-aeea-44db-a18c-0b5faf2c6b8d">WorldQuant University - Data Science</a>
     (plus <a target="_blank" href="https://www.credly.com/badges/016d0bbd-498c-4ba3-bdf0-ba43e60c694a">ML part</a>), 2021
   </li>
-  <li><a target="_blank" href="https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/971465~1336151/pdf">Principles of Reactive Programming</a>, 2014</li>
-  <li>Ph.D. (incomplete): <a target="_blank" href="https://github.com/akraievoy/holonet">distributed key-value store overlay networks, their spectrum and resilience to partitioning</a></li>
+  <li><a target="_blank" href="./2014-coursera-scala-principles-of-reactive-programming.pdf">Scala Principles of Reactive Programming</a>, 2014</li>
   <li>2005 M.Sc. &laquo;<a target="_blank" href="http://mmsa.kpi.ua/en/disciplines/smdm">Systems and Methods of Decision-Making</a>&raquo;, Institute of Applied System Analysis of NTUU &laquo;Kyiv Polytechnic Institute&raquo;, Ukraine </li>
-</ul>
-<h2 class="h2">Languages</h2>
-<ul start="1">
-  <li><span>English - First Certificate in English, Level 2 (C1) as of February 2015, Cambridge English Language Assessment;</span> </li>
-  <li><span>Russian, Ukrainian - native speaker</span></li>
 </ul>
 
 <h2 class="h2">Soft Skills</h2>
@@ -133,17 +127,16 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
   <li>Play for the team: balance autonomy and efficiency, manage interrupts and long-term backlogs</li>
   <li>Manage delivery: focus on blockers on critical path, engage owners, set example for execution and code quality</li>
   <li>Strive for simplicity: best architecture forces fewest lock-ins, good design is invisible</li>
-  <li>Prefer waiting (for open source to reach parity with requirements) to inventing (from scratch, in-house)</li>
 </ul>
 
 <h2 class="h2">Hard Skills</h2>
 
-<ul start="1">
-  <li>Styles:
+<ul >
+  <p>Styles:
     <span class="pro">complex tasks within last year</span>,
     <span>moderate complexity within last year</span>,
-    <span class="stale">not used for at least a year</span>
-  </li>
+    <span class="dated">not used for at least a year</span>
+  </p>
 
   <br/>
 
@@ -156,22 +149,22 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
   </li>
   <li>Cloud Service Providers:
     <span class="pro">Amazon Web Services</span>,
-    <span class="">Google Compute Platform</span>,
-    <span class="">Microsoft Azure</span>,
+    <span class="pro">Google Compute Platform</span>,
+    <span class="pro">Microsoft Azure</span>,
     <span class="">OpenShift</span>
     <!--
-    <span class="stale">Mesos</span>,
-    <span class="stale">Singularity</span>
+    <span class="dated">Mesos</span>,
+    <span class="dated">Singularity</span>
     -->
   </li>
   <li>Continuous Delivery:
     <span class="">GitHub Actions</span>,
     <span class="">Azure DevOps Pipelines</span>,
-    <span class="stale">CircleCI</span>,
-    <span class="stale">TeamCity</span>,
-    <span class="stale">Jenkins</span>
+    <span class="dated">CircleCI</span>,
+    <span class="dated">TeamCity</span>,
+    <span class="dated">Jenkins</span>
     <!--
-    <span class="stale">GitHub API</span>,
+    <span class="dated">GitHub API</span>,
     -->
   </li>
   <li>Observability: 
@@ -179,10 +172,10 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
     <span class="">Grafana</span>,
     <span class="">Kibana</span>,
     <span class="">strace</span>,
-    <span class="stale">Sentry</span>,
-    <span class="stale">NewRelic</span>,
-    <span class="stale">Zabbix</span>,
-    <span class="stale">Graylog</span>
+    <span class="dated">Sentry</span>,
+    <span class="dated">NewRelic</span>,
+    <span class="dated">Zabbix</span>,
+    <span class="dated">Graylog</span>
   </li>
 
   <br/>
@@ -190,44 +183,44 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
   <li>Algorithm Design:  
     <span class="pro">pandas</span>,
     <span class="pro">numpy/bottleneck/numba</span>,
-    <span class="stale"><a target="_blank" href="https://www.hackerrank.com/akraievyi">HackerRank</a></span>,
-    <span class="stale"><a target="_blank" href="https://github.com/akraievoy/codejam">CodeJam</a></span>, 
-    <span class="stale"><a target="_blank" href="https://www.topcoder.com/members/akraievoy/">TopCoder</a></span>
+    <span class="dated"><a target="_blank" href="https://www.hackerrank.com/akraievyi">HackerRank</a></span>,
+    <span class="dated"><a target="_blank" href="https://github.com/akraievoy/codejam">CodeJam</a></span>, 
+    <span class="dated"><a target="_blank" href="https://www.topcoder.com/members/akraievoy/">TopCoder</a></span>
   </li>
   <li>System Architecture: 
     <span>BPMN 2</span>, 
     <span>UML</span>, 
-    <span class="stale">GoF/J2EE patterns</span>
+    <span class="dated">GoF/J2EE patterns</span>
   </li>
   <li>Data stores: 
     <span class="pro">Postgresql</span>,
-    <span class="stale">BigQuery</span>
-    <span class="stale">Redis</span>,
-    <span class="stale">Hadoop</span>,
-    <span class="stale">RedShift</span>
+    <span class="">BigQuery</span>,
+    <span class="dated">Redis</span>,
+    <span class="dated">Hadoop</span>,
+    <span class="dated">RedShift</span>
     <!--
-    <span class="stale">ElasticSearch</span>,
-    <span class="stale">CouchDB</span>,
-    <span class="stale">MongoDB</span>,
-    <span class="stale">InfluxDB</span>
+    <span class="dated">ElasticSearch</span>,
+    <span class="dated">CouchDB</span>,
+    <span class="dated">MongoDB</span>,
+    <span class="dated">InfluxDB</span>
     -->
   </li>
   <li>Event Streaming:
-    <span class="">Apache Kafka</span>,
-    <span class="stale">ReactiveX</span>,
-    <span class="stale">Spark Streaming</span>,
-    <span class="stale">Flask</span>
+    <span class="pro">Apache Kafka</span>,
+    <span class="dated">ReactiveX</span>,
+    <span class="dated">Spark Streaming</span>,
+    <span class="dated">Flask</span>
     <!--
-    <span class="stale">Apache Camel</span>
+    <span class="dated">Apache Camel</span>
     -->
   </li>
   <!--
   <li>Interop:
     <span class="pro">ReST/JSON</span>,
     <span class="">GRPC/Protobufs</span>,
-    <span class="stale">SOAP/XML</span>,
-    <span class="stale">GraphQL</span>,
-    <span class="stale">avro</span>
+    <span class="dated">SOAP/XML</span>,
+    <span class="dated">GraphQL</span>,
+    <span class="dated">avro</span>
   </li>
   -->
 
@@ -238,8 +231,9 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
     <span class="pro">jq</span>,
     <span class="pro">JMESPath/gjson</span>,
     <span class="">make</span>
+    <span class="">invoke</span>
     <!--
-    <span class="stale">python invoke</span>
+    <span class="dated">python invoke</span>
     -->
   </li>
   <li>Test-driven Development: 
@@ -248,15 +242,15 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
     <span class="">behaviour-driven tests</span>
   </li>
   <li>Object-oriented Programming:
-    <span class="">python</span>,
+    <span class="pro">python</span>,
     <span class="">go</span>,
-    <span class="stale">Java</span>, 
-    <span class="stale">rust</span>
+    <span class="dated">Java</span>, 
+    <span class="dated">rust</span>
   </li>
   <li>Functional Programming:
-    <span class="stale">Scala</span>,
-    <span class="stale">lodash/d3 (javascript)</span>,
-    <span class="stale">Haskell</span>
+    <span class="dated">Scala</span>,
+    <span class="dated">lodash/d3 (javascript)</span>,
+    <span class="dated">Haskell</span>
   </li>
 
   <br/>
@@ -264,63 +258,61 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
   <li>Build Automation:
     <span class="pro">Please</span> (similar to Bazel, please see <a target="_blank" href=https://please.build/">here</a>),
     <span class="">poetry</span>,
-    <span class="stale">sbt</span>,
-    <span class="stale">gradle</span>,
-    <span class="stale">maven</span>,
-    <span class="stale">ant</span>
+    <span class="dated">sbt</span>,
+    <span class="dated">gradle</span>,
+    <span class="dated">maven</span>,
+    <span class="dated">ant</span>
     <!--
     <span class="">bazel<span>,
     -->
   <li>Source control:
     <span class="pro">git</span>,
     <span class="pro">git flow</span>,
-    <span class="stale">subversion</span>
+    <span class="dated">subversion</span>
   </li>
   <li>Security:
-    <span class="stale">checkov</span>,
-    <span class="stale">terraform-compliance</span>,
-    <span class="stale">Contrast (dynamic vuln scanning)</span>,
-    <span class="stale">code obfuscation</span>
+    <span class="dated">checkov</span>,
+    <span class="dated">terraform-compliance</span>,
+    <span class="dated">Contrast (dynamic vuln scanning)</span>,
+    <span class="dated">code obfuscation</span>
   </li>
   <!--
   <li>Web design: 
     <span class="">HTML 5</span>, 
     <span class="">CSS 3</span>, 
     <span>D3.js</span>, 
-    <span class="stale">Angular.js</span>, 
-    <span class="stale">jQuery</span>, 
-    <span class="stale">Kendo UI</span>
+    <span class="dated">Angular.js</span>, 
+    <span class="dated">jQuery</span>, 
+    <span class="dated">Kendo UI</span>
   </li>
   -->
 </ul>
 
-<h2 class="h2">Preferred Tools</h2>
-<ul start="1">
-  <li>Operating System: Debian/Ubuntu, Xfce</li>
-  <li>Development tools: IntelliJ Idea/DataGrip, dig, nc, wireshark, Chrome Dev Tools</li>
-  <li>Terminal: bash, tmux, silversearch, fzf, k9s, vim/nano</li>
-</ul>
+<h2 class="h2">Personal Info</h2>
+<p class="single-line-summary">Areas of interest: portfolio construction, timeseries prediction, statistical analysis and inference, <a target="_blank" href="https://github.com/akraievoy/holonet">complex networks</a></p>
+<p class="single-line-summary">Preferred tools: Ubuntu/XFCE, IntelliJ, zsh, tmux, silversearch, fzf</p>
+<p class="single-line-summary">Languages: <span>English - C1, 2015</span>; <span>Russian, Ukrainian - native</span></p>
 
 <!--
 <h2 class="h2">Python frameworks</h2>
-<ul start="1">
+<ul >
   <li>Data Analysis: <span class="study">pandas</span>, <span class="study">matplotlib</span>, <span class="study">seaborn</span></li>
   <li>Web: <span class="">Flask</span></li>
 </ul>
 <h2 class="h2"><span class="pro">Java frameworks</span></h2>
-<ul start="1">
-  <li>Dependency Injection: <span class="pro">Guice</span>, <span class="stale">Spring</span>, <span class="stale">picoContainer</span></li>
-  <li>Persistence: <span>JDBC</span>, <span class="stale">commons-dbutils</span>, <span class="stale">JPA/Hibernate</span></li>
-  <li>Web: <span>Jetty</span>, <span class="stale">Spring-MVC</span>, <span class="stale">Servlets</span>, <span class="stale">JSP</span></li>
-  <li>Reporting: <span class="stale">Apache POI</span>, <span class="stale">Jasper Reports</span></li>
-  <li>GUI/Plotting: <span class="stale">AWT/Swing</span>, <span class="stale">Java2D</span>, <span class="stale">Prefuse</span>, <span class="stale">JFree Chart</span></li>
+<ul >
+  <li>Dependency Injection: <span class="pro">Guice</span>, <span class="dated">Spring</span>, <span class="dated">picoContainer</span></li>
+  <li>Persistence: <span>JDBC</span>, <span class="dated">commons-dbutils</span>, <span class="dated">JPA/Hibernate</span></li>
+  <li>Web: <span>Jetty</span>, <span class="dated">Spring-MVC</span>, <span class="dated">Servlets</span>, <span class="dated">JSP</span></li>
+  <li>Reporting: <span class="dated">Apache POI</span>, <span class="dated">Jasper Reports</span></li>
+  <li>GUI/Plotting: <span class="dated">AWT/Swing</span>, <span class="dated">Java2D</span>, <span class="dated">Prefuse</span>, <span class="dated">JFree Chart</span></li>
 </ul>
 <h2 class="h2">Scala frameworks</h2>
-<ul start="1">
+<ul >
   <li>Big Data: <span class="">Spark</span>, <span class="">Spark Structured Streaming</span></li>
-  <li>Persistence: <span class="">ScalikeJDBC</span>, <span class="stale">Anorm</span>, <span class="stale">Salat/Casbah</span></li>
-  <li>Web: <span class="">Unfiltered</span>, <span class="stale">akka-http</span>, <span class="stale">Play!</span></li>
-  <li>Actors: <span class="stale">Akka 2.3</span></li>
+  <li>Persistence: <span class="">ScalikeJDBC</span>, <span class="dated">Anorm</span>, <span class="dated">Salat/Casbah</span></li>
+  <li>Web: <span class="">Unfiltered</span>, <span class="dated">akka-http</span>, <span class="dated">Play!</span></li>
+  <li>Actors: <span class="dated">Akka 2.3</span></li>
 </ul>
 -->
 
@@ -328,9 +320,9 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
 <h2 class="h2">Employment History</h2>
 <table border=0 cellspacing=0 class="hist">
   <tr>
-    <th width="8%"><span style="font-weight: bold;">Time<span></td>
-    <th width="31%"><span style="font-weight: bold;">Employer</span><hr/>Technologies</td>
-    <th width="61%"><span style="font-weight: bold;">Position</span><hr/>Project Domain</td>
+    <th width="8%"><span style="font-weight: bold;">Time</span></th>
+    <th width="31%"><span style="font-weight: bold;">Employer</span><hr/>Technologies</th>
+    <th width="61%"><span style="font-weight: bold;">Position</span><hr/>Project Domain</th>
   </tr>
   <tr class="subhead">
     <td>current<br/>
@@ -338,6 +330,17 @@ Areas of interest: portfolio construction, Kelly sizing, complex networks, decen
       Sept 2021</td>
     <td>Thought Machine</td>
     <td>Site Reliability Engineer</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Opsgenie, Terraform, Bigquery</td>
+    <td>Took part in implementation of long-term summary reporting pipeline for opsgenie alert and incident data.
+      Ported existing manual opsgenie policy setup to declarative terraform.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Google Cloud, Amazon Web Services</td>
+    <td>Led a project to implement cross-cloud connectivity solution with extra detail to availability SLAs.</td>
   </tr>
   <tr>
     <td></td>
