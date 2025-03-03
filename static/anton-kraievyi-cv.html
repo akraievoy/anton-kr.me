@@ -61,6 +61,9 @@ h2, .h2 {
   text-decoration: underline;
   color: blue;
 }
+li.blank-line-for-grouping {
+    list-style-type: none;
+}
 .pro {
   font-weight: bold
 }
@@ -72,6 +75,10 @@ h2, .h2 {
 .dated {
   color: #777;
   font-style: italic
+}
+table.hist {
+  border: none;
+  border-collapse: collapse;
 }
 table.hist td, table.hist th {
   padding: 2px;
@@ -137,13 +144,13 @@ table.hist th {
 <h2 class="h2">Hard Skills</h2>
 
 <ul>
-  <p>&nbsp;&nbsp;Styles:
+  <li class="blank-line-for-grouping">Styles:
     <span class="pro">complex tasks within last year</span>,
     <span>moderate complexity within last year</span>,
     <span class="dated">not used for at least a year</span>
-  </p>
+  </li>
 
-  <br/>
+  <li class="blank-line-for-grouping">&nbsp;</li>
 
   <li>Infrastructure:
     <span class="pro">Terraform</span>,
@@ -184,7 +191,7 @@ table.hist th {
     <span class="dated">Graylog</span>
   </li>
 
-  <br/>
+  <li class="blank-line-for-grouping">&nbsp;</li>
 
   <li>Algorithm Design:  
     <span class="pro">pandas</span>,
@@ -230,7 +237,7 @@ table.hist th {
   </li>
   -->
 
-  <br/>
+  <li class="blank-line-for-grouping">&nbsp;</li>
 
   <li>Automation Scripting:
     <span class="pro">bash + coreutils</span>,
@@ -254,7 +261,7 @@ table.hist th {
     <span class="dated">Haskell</span>
   </li>
 
-  <br/>
+  <li class="blank-line-for-grouping">&nbsp;</li>
 
   <li>Build Automation:
     <span class="pro">Please</span> (similar to Bazel, please see <a target="_blank" href=https://please.build/">here</a>),
@@ -320,11 +327,11 @@ table.hist th {
 -->
 
 <h2 class="h2">Employment History</h2>
-<table border=0 cellspacing=0 class="hist">
+<table class="hist">
   <tr>
-    <th width="8%"><span style="font-weight: bold;">Time</span></th>
-    <th width="31%"><span style="font-weight: bold;">Employer</span><hr/>Technologies</th>
-    <th width="61%"><span style="font-weight: bold;">Position</span><hr/>Project Domain</th>
+    <th style="width: 8%"><span style="font-weight: bold;">Time</span></th>
+    <th style="width: 31%"><span style="font-weight: bold;">Employer</span><hr/>Technologies</th>
+    <th style="width: 61%"><span style="font-weight: bold;">Position</span><hr/>Project Domain</th>
   </tr>
   <tr class="subhead">
     <td>current<br/>
@@ -375,27 +382,27 @@ table.hist th {
   </tr>
   <tr>
     <td></td>
-    <td>python, shell, rust, kubernetes</br>Jenkins, Sentry, NewRelic, Slack API</td>
+    <td>python, shell, rust, kubernetes<br/>Jenkins, Sentry, NewRelic, Slack API</td>
     <td>Extend declarative <a href="https://github.com/babylonhealth/shipcat/commits?author=bh-anton-k" target="_blank">infra-as-code stack</a> with components to model/automate configuration for Sentry/NewRelic microservice monitoring integrations</td>
   </tr>
   <tr>
     <td></td>
-    <td>Contrast Security</br>gradle, docker-compose, java/spring-webmvc, python/flask, hugo</td>
+    <td>Contrast Security<br/>gradle, docker-compose, java/spring-webmvc, python/flask, hugo</td>
     <td>Prototype/test/document <a href="https://www.contrastsecurity.com/" target="_blank">Contrast Security</a> vulnerability scanning in multiple existing projects</td>
   </tr>
   <tr>
     <td></td>
-    <td>postgres, go, make, terraform<br/>grafana, jenkins, AWS (S3/IAM)</br></td>
+    <td>postgres, go, make, terraform<br/>grafana, jenkins, AWS (S3/IAM)</td>
     <td>Improve microservice deployment monitoring and auditability</td>
   </tr>
   <tr>
     <td></td>
-    <td>Azure DevOps pipelines, Spinnaker</br>python/flask, github/jira APIs, docker, shell</td>
+    <td>Azure DevOps pipelines, Spinnaker<br/>python/flask, github/jira APIs, docker, shell</td>
     <td>Battle-test/document/maintain next-generation Continuous Delivery/Compliance platform</td>
   </tr>
   <tr>
     <td></td>
-    <td>Azure DevOps pipelines</br>terraform, shell, AWS (EC2/CloudFormation)</td>
+    <td>Azure DevOps pipelines<br/>terraform, shell, AWS (EC2/CloudFormation)</td>
     <td>Extend <a href="https://github.com/babylonhealth/terraform-provider-azuredevops/commits?author=bh-anton-k" target="_blank">infrastructure-as-code provisioning</a> for Continuous Delivery/Compliance platform</td>
   </tr>
   <tr class="subhead">
@@ -598,7 +605,7 @@ table.hist th {
     <td></td>
     <td>J2SE 1.4, JAXP(DOM/SAX), AXIS, Swing, Java 2D, Java Web Start</td>
     <td>TOM: Wrapping socket stream based communication protocol into web service in an existing
-      software project.</br>
+      software project.<br/>
       Chord: Redesign and extend a simulation of peering network protocols<br>
       SixSigma: Math core of portal system to be used for statistical analysis of business data</td>
   </tr>
